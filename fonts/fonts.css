@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Sailec';
+    src: local('Sailec Light'), local('Sailec-Light'),
+        url('Sailec-Light.woff2') format('woff2'),
+        url('Sailec-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sailec';
+    src: local('Sailec Medium'), local('Sailec-Medium'),
+        url('Sailec-Medium.woff2') format('woff2'),
+        url('Sailec-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sailec';
+    src: local('Sailec Bold'), local('Sailec-Bold'),
+        url('Sailec-Bold.woff2') format('woff2'),
+        url('Sailec-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sailec';
+    src: local('Sailec'),
+        url('Sailec.woff2') format('woff2'),
+        url('Sailec.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sailec';
+    src: local('Sailec Bold Italic'), local('Sailec-BoldItalic'),
+        url('Sailec-BoldItalic.woff2') format('woff2'),
+        url('Sailec-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sailec';
+    src: local('Sailec Medium Italic'), local('Sailec-MediumItalic'),
+        url('Sailec-MediumItalic.woff2') format('woff2'),
+        url('Sailec-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+/*=================================*/
+.pulse {
+	animation-name: pulse;
+	-webkit-animation-name: pulse;
+	animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	}
+@keyframes pulse {
+0% {transform: scale(0.9);}
+50% {transform: scale(1);}
+100% {transform: scale(0.9);}
+}
+
+@-webkit-keyframes pulse {
+0% {-webkit-transform: scale(0.95);}
+50% {-webkit-transform: scale(1);}
+100% {-webkit-transform: scale(0.95);}
+}	
+

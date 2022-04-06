@@ -1,0 +1,125 @@
+/*--------------------------
+PROGRESS PAGE CSS
+---------------------------*/
+.process-wrap{
+	overflow:hidden;
+	}
+.progress-top{
+	float:left;
+	width:100%;
+	height:270px;
+	background:url(../images/processing-img-bg.jpg) no-repeat center center;
+	}
+.progress-top p{
+	float:left;
+	width:100%;
+	color:#fff;
+	font-size:44px;
+	line-height:50px;
+	font-weight:bold;
+	margin-top:40px;
+	}
+.pie_progress {
+	width:220px;
+	border-radius:50%;
+	display:inline-block;
+	vertical-align:middle;
+	margin-top:-110px;
+	position: relative;
+	text-align: center;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	}
+.pie_progress__svg {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	padding-bottom: 100%;
+	overflow: hidden;
+	vertical-align: middle;	
+	border-radius:50%;
+	-webkit-box-shadow:inset 0 0 25px 10px rgba(0,0,0,0.7);
+	box-shadow:inset 0 0 25px 10px rgba(0,0,0,0.7);
+	}
+.pie_progress__svg svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block; 
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	}
+.pie_progress__number {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	color:#239ef5;
+	font-size: 60px;
+	font-weight:300;
+	z-index:1;
+	}
+.pie_progress__number sup{
+	font-size:50%;
+	font-weight:300;
+	}
+.bottom-progress{
+	float:left;
+	width:100%;
+	padding:30px;
+	}
+.progress-line{
+	float:left;
+	width:100%;
+	height:3px;
+	background:#dde3eb;
+	}
+.progress-indicator{
+	float:left;
+	width:10%;
+	height:100%;
+	background:#239ef5;
+	}
+ul.progress-steps{
+	float:left;
+	width:100%;
+	padding:0 20px;
+	position:relative;
+	z-index:1;
+	}
+ul.progress-steps li{
+	float:left;
+	width:33.33%;
+	color:#b9b9b9;
+	font-size:16px;
+	padding-top:20px;
+	position:relative;
+	}
+ul.progress-steps li:after{
+	content:'';
+	position:absolute;
+	left:50%;
+	margin-left:-5px;
+	top:-9px;
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	background:#e1eaea;
+	border:2px solid #dde3eb;
+	}
+ul.progress-steps li.active{ color:#239ef5;}
+ul.progress-steps li.active:after{background:#b1f5fb;border:2px solid #239ef5;}
+
+@media only screen and (max-width:767px){
+.progress-top{height:180px;}
+.progress-top p{font-size:32px; line-height:36px; letter-spacing:0.5px; margin-top:15px;}
+.pie_progress__number{font-size:46px;}
+.pie_progress{width:150px; margin-top:-80px;}
+.bottom-progress{padding:25px 15px;}
+ul.progress-steps{padding:0;}
+ul.progress-steps li{font-size:12px; padding-top:10px;}
+}
